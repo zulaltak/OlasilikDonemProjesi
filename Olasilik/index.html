@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <link rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&amp;subset=latin-ext"
+    rel="stylesheet"
+  />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, inital-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <section>
+      <div class="home">
+        <div class="photo"></div>
+        <div class="content">
+          <div class="cpadding">
+            <div class="box">
+              <div id="title">OLASILIK HESAPLAMALARI</div>
+              <div id="title-text">SITE KULLANIMI</div>
+              <div id="explanation-text">
+                ⋅  Veri setinizi talimatlara uygun hesaplayabilirsiniz. <br>
+                ⋅  Hesaplamak için "Hesapla" butonuna basınız. <br>
+                ⋅  Hesaplamalarınız temizlemek için "Geri don" butonuna basınız.
+              </div>
+            </div>
+          </div>
+          <div id="input" >
+            <div class="form-group green-border-focus">
+              <textarea
+                id="data_set"
+                name="data_set"
+                class="auto-height input100"
+                
+                rows="12"
+                cols="80"
+                style="font-family: Courier"
+                required=""
+                placeholder="Hesaplanacak verinizi talimatlara uygun giriniz.
+1- Ondalık veriler için '.' işareti kullanınız (2.3, 4.5)
+2- İkiden fazla veri girecekseniz verilerinizi ',' ile ayırınız ve virgüller arasına boşluk koymayanız."></textarea>
+              </textarea>
+            </div>
+            <div class="back-btn" id="calculate">
+                <p>Hesapla</p>
+            </div>
+          </div>
+          <div id="output">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  
+                  <th><br/>Konular</th>
+                  <th>Sonuçlar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Aritmetik Ortalama</td>
+                  <td id="aritmetikOrtalama">-</td>
+                </tr>
+                <tr>
+                  <td>Geometrik Ortalama</td>
+                  <td id="geometrikOrtalama">-</td>
+                </tr>
+                <tr>
+                  <td>Harmonik Ortalama</td>
+                  <td id="harmonikOrtalama">-</td>
+                </tr>
+                <tr>
+                  <td>Medyan</td>
+                  <td id="medyan">-</td>
+                </tr>
+                <tr>
+                  <td>Mod</td>
+                  <td id="mod">-</td>
+                </tr>
+                <tr>
+                  <td>Standart Sapma</td>
+                  <td id="standartSapma">-</td>
+                </tr>
+                <tr>
+                  <td>Ortalama Mutlak Hesaplama</td>
+                  <td id="ortalamaMutlakHesaplama">-</td>
+                </tr>
+                <tr>
+                  <td>Varyans</td>
+                  <td id="varyans">-</td>
+                </tr>
+                <tr>
+                  <td>Değişken Katsayısı</td>
+                  <td id="degiskenKat">-</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="back-btn" id="back">
+                <p>Geri Don</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
